@@ -1,0 +1,123 @@
+
+
+/* 초기화 */
+* { /* *(아스트릭)은 모든 태그 선택자 */
+    margin: 0;
+    padding: 0;
+    /* 가로세로 길이 기준을 보더박스 기준으로 함. 
+    css에서는 일반적으로 border box를 기준으로 한다. */
+    box-sizing: border-box;
+}
+
+body {
+    font : Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#main-page {
+    background: url(img/airbnb_bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.main-navi {
+    position: sticky;
+    /* 화면 상단에 붙어있는 포지션. */
+    top: 0;
+    background-color: white;
+    height: 80px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navi .logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navi .logo i{
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+}
+
+.main-navi .logo a{
+    text-decoration: none;
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+.main-navi .search .btn{
+    height: 48px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+}
+
+.main-navi .search .btn:hover {
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15); /*rgba에서 a는 투명도*/
+}
+
+.main-navi .search .bicon {
+    background-color: rgb(255, 56, 92);
+    color: white;
+    border-radius: 50%; /*원*/
+    padding: 7px 9px;
+}
+
+.main-navi .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.box {
+    width: 1600px;
+    height: 364px;
+    padding: 7% 80px ;
+}
+
+.box h1 {
+    font-size: 50px;
+}
+
+.box button {
+    color: white;
+    font-weight: 900;
+    font-size: 7;
+    height: 35px;
+    width: 130px;
+    border-radius: 15px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+    outline: none;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
