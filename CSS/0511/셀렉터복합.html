@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>복합 셀렉터 연습!</title>
+    <style>
+      /* 여러개 선택, (콤마) */
+      h1, h2, h3 {
+        color: darkblue;
+      }
+      /* 동시에 선택(교집합) */
+      li.key {color: skyblue;}
+      /* 내부 선택 */
+      ul li { font-style: italic; }
+      /* 상태별 선택 */
+      li:hover { /* hover는 마우스가 위에 있을 때  */
+        background-color: chocolate; 
+        color: white;}
+        #myid{/* id > class > tag 순으로 우선 순위가 높다.*/
+          color: cornflowerblue;
+        }
+</style>
+  </head>
+  <body>
+    <h1>개발자 공부법!</h1>
+
+    <h2>개념</h2>
+    <ul>
+      <li class="key">큰 그림부터 - 목차부터, 핵심부터, 사소한건 제껴!</li>
+      <li>얕고 빠르게 - 한 번에 다 X. 뼈대부터 먼저!</li>
+      <li id="myid">점진적 확장 - 뼈대에 살을 붙이기! 어려운 건 스킵!</li>
+    </ul>
+
+    <h2>코드</h2>
+    <ul>
+      <li>따라치기 - 기초가 곧 핵심! 어려운거 NONO!</li>
+      <li class="key">바꿔보기 - 내 입맛대로 변경! 가설 -> 검증!</li>
+      <li>출제하기 - 출제자의 입장!</li>
+    </ul>
+
+    <h2>문서화!</h2>
+    <ul>
+      <li>Why - 개발은 팀 단위 협업.</li>
+      <li>How - 문학적 X. 논리적, 간결!</li>
+      <li class="key">What - 블로그, 깃허브(취업 시 유리)</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 세로 정렬</title>
+    <style>
+        html, body {
+			background-color: #ffeead;
+			margin: 10px;
+		}
+        /* >표시는 부모 자식관계 */
+		.container > div {
+			padding: 10px;
+			text-align: center;
+			font-size: 2em;
+			color: #ffeead;
+		}
+        .home {
+			background-color: #96ceb4;
+            margin-left: auto;
+            flex:1 ;
+            order : 1;
+            align-self: flex-end;
+		}
+		.search {
+			background-color: #ff6f69;
+            flex:2;
+		}
+		.logout {
+			background-color: skyblue;
+            flex : 1;
+            order : -1;
+            align-items: flex-start;
+
+		}
+		.container {
+			border: 5px solid #f5c358;
+            /* 플렉스는 항상 부모태그에서 적용 */
+            display: flex;
+            /* 가로 정렬 center flex-start flex-end, spaceAround spaceBetween */
+            justify-content: flex-end;
+            /* 자동 줄 바꾸기 */
+            flex-wrap:wrap;
+            /* 세로 정렬 : 화면 높이의 50% */
+            height : 50vh;
+            align-items: flex-end;
+
+		}
+    </style>
+</head>
+<body>
+    <!-- 플렉스를 사용하기 위해서 부모태그가 필요 -->
+    <!-- nav는 사이트 상단의 메뉴를 의미 -->
+    <nav class="container">
+		<div class="home">Home</div>
+		<div class="search">Search</div>
+		<div class="logout">Logout</div>
+	</nav>
+</body>
+</html>

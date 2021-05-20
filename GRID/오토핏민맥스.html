@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오토핏 민맥스</title>
+    <style>
+        .item {
+            padding: 3rem; /* 1rem = 16px. 3rem = 48px */
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .grid {
+            /* 그리드 사용 시작 */
+            display: grid;
+            /* 그리드 갭 : 아이템 사이의 공간 */
+            gap : 10px;
+
+            /* 그리드 템플릿 컬럼(가로 아이템의 길이) 설정 */
+            /* grid-template-columns: 200px 210px 150px; */
+            /* grid-template-columns: 25% 25% 25% 25%; */
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+            /* 그리드 템플릿 로우 (세로줄의 길이) 설정 */
+            /* grid-template-rows: 1fr 2fr 3fr; */
+            /* 리핏(횟수, 컬럼길이 ) */
+            /* grid-template-columns: repeat(5, 1fr); */
+            /* 오토핏 : 화면크기에 맞춰서 자동, minmax(최소, 최대)*/
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            margin-top: 50px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+        <div class="item">Item 15</div>
+        <div class="item">Item 16</div>
+    </div>
+
+
+</body>
+</html>

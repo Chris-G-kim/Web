@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그, input 태그</title>
+</head>
+<body>
+    <form action="">
+
+        <!-- 일반 텍스트 입력 -->
+        <div>
+            <label>이름</label>
+            <input type="text" autofocus required>
+        </div>
+        
+        <!-- 비밀번호 입력 -->
+        <div>
+            <label>비밀번호</label>
+            <input type="password" minlength="4" maxlength="7">
+        </div>
+        
+        <!-- 이메일 입력 -->
+        <div>
+            <label>이메일</label>
+            <input type="email" placeholder="이메일을 입력하세요">
+        </div> <br><br>       
+        
+        <!-- 장문의 글 입력 : Textarea -->
+        <div>
+            <label>메세지</label>
+            <textarea cols="30", rows="10">
+            </textarea>
+        </div> 
+        
+        <!-- 선택 입력 : Select/Option -->
+        <div>
+            <label>성별</label>
+            <select>
+                <option value="남성">남성</option>
+                <option value="여성">여성</option>
+                <option value="중성">중성</option>
+            </select>
+        </div>           
+        
+        <!--숫자 입력 : number-->
+        <div>
+            <label> 나이 </label>
+            <input type="number">
+        </div>   
+        
+        <!--날짜 입력 : number-->
+        <div>
+        <label> 생년월일 </label>
+        <input type="date">
+        </div>   
+
+        <!--여러 개 중 하나를 선택 : radio 타입-->
+        <div>
+        <label> 멤버십 </label>
+        <input type="radio" name="mem"> 심플
+        <input type="radio" name="mem"> 스탠다드
+        <input type="radio" name="mem"> 동네 슈퍼
+        </div> 
+
+        <!--여러개 중 다중 선택 ㅣ checkbox 타입-->
+        <div>
+        <input type="checkbox" name="check1"> 오토바이
+        <input type="checkbox" name="check2"> 자동차
+        <input type="checkbox" name="check3"> 보트
+        </div>
+      
+        <!--서버로 전송(submint 버튼)-->
+        <button type="submit">전송</button>
+        <button type="reset">리셋</button>
+    </form>   
+</body>
+</html>

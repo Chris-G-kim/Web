@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* 
+        { 선택자 *은 모든 태그에 적용한다는 의미.
+        - 박스 사이징을 보더박스로 
+        - 마진과 패딩을 0으로 초기화 }
+        ==> 초기화 코드
+       */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      body {
+        /* 
+          -Background color is #344a72
+        */
+        background-color: #344a72;
+        font-family: Raleway;
+        color : white;
+        line-height:1.8;
+      }
+
+      a {
+        /* 
+        Underlined links are ugly :)
+       */
+       text-decoration: none;
+       color: yellowgreen;
+      }
+
+      #container {
+        /* 
+        가로길이 최대 400px로 설정. 가운데 맞춤.
+        -Remember, margin: auto on left and right will center a block element 
+        -I would also set a "max-width" for responsiveness
+        -May want to add some padding
+        */
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        /* 
+          This is the white area around the form and heading, etc
+          폼태그 내용을 바탕화면 흰색 글자 #333
+        */
+        background-color: white;
+        color: #333;
+        padding: 15px 25px;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        /* 
+          May want to center these
+          제목과 글자를 가운데 맞추기
+        */
+        text-align: center;
+      }
+
+      .form-wrap .form-group{
+        /* 
+          Each label, input is wrapped in .form-group
+        */
+        margin-top:15px;
+      }
+
+      .form-wrap .form-group label {
+        /* 
+          라벨을 블록태그로 바꿈
+          Label should be turned into a block element
+        */
+        display : block;
+        color:#665
+      }
+
+      .form-wrap .form-group input {
+        /* 
+          가로길이 100% 패딩으로 보기 좋게 
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius:5px;
+      }
+
+      .form-wrap button {
+        /* 버튼도 블록으로 바꾸고 가로 100% 
+           색은 #491c1a2
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+        display: block;
+        width: 100%;
+        color: white;
+        background-color: #49c1a2;
+        padding: 10px;
+        margin-top: 20px;
+        cursor:pointer
+      }
+
+      .form-wrap button:hover {
+        /*
+          버튼에 마우스 올릴 때 색 #37a08e
+          Hover background color for button is #37a08e
+        */
+        background-color: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        /* 글자 크기 작게
+          Bottom text is smaller
+        */
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        /* 가운데로 보내기.
+        Should be centered
+       */
+      text-align: center;
+      margin-top: 10px;
+      }
+
+      footer a {
+        /* 
+          Footer link color is #49c1a2
+        */
+        color : #49c1a2
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

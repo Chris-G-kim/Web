@@ -1,0 +1,18 @@
+      /* 태그 선택자{ CSS 속성 } */
+      body{
+        /* 폰트(글꼴) 변경 */
+        font-family: cursive;
+      }
+      .male{
+        color: blueviolet;
+      }
+      .female{
+        color: aquamarine;
+      }
+      ul{ 
+      /* 앞의 동그라미 변경 */
+        list-style:georgian;
+      }
+      #ceo {
+        background-color: coral;
+      }

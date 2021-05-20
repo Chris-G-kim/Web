@@ -1,0 +1,61 @@
+.zone {
+    cursor:pointer;
+    display:inline-block;
+    text-align: center;
+    font-size:10em; 
+    /* 이모지는 그림이지만 글자로 취급하므로 폰트사이즈 적용 */
+    padding: 0 10px 20px 10px;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* 배경 색 클래스*/
+.green{
+    background: linear-gradient(#56B870 0%,#a5c956 100%); /* W3C */
+}
+
+.red{
+    background: linear-gradient(#C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+.yellow{
+    background: linear-gradient(#F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+.blue{
+    background: linear-gradient(#7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+.purple {
+    background: linear-gradient(#A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* W3C */
+}
+
+.brown {
+    background: linear-gradient(#f6e6b4 0%,#ed9017 100%); /* W3C */
+}
+
+.grid {
+    display: grid;
+    /* 화면 크기에 맞춰서 아이템들을 정렬. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap : 15px;
+}
+
+.zone:nth-child(even) {
+    /* span은 갯수만큼 합침 */
+    grid-column: span 2;
+}
+
+.zone:nth-child(odd) {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

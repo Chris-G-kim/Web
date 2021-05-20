@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            padding: 0; margin: 0;
+            background: url(bg1.jpg) left top no-repeat;
+            background-size: cover;
+            height: 100vh; 
+        } */
+        .bg1{
+            background: url(bg1.jpg) left top no-repeat;
+            background-size: cover;
+            height: 120vh; /* 화면의 100% 높이를 의미함 */
+            display: flex;
+            justify-content: center; /*가로 정렬*/
+            align-items: center; /*세로 정렬*/
+        }
+        .bg2{
+            background: url(bg2.jpg) left top no-repeat;
+            background-size: cover;
+            height: 100vh; 
+        }
+        .bg3{
+            background: linear-gradient(45deg, red, yellow, green, blue);
+            background-size: cover;
+            height: 100vh; 
+        }
+        .center {
+            width: 300px;
+            height: 50px;
+            color: white;
+            border: 5px solid white;
+            font-size: 25px;
+            text-align: center;
+            display: flex;
+            justify-content: center; /*가로 정렬*/
+            align-items: center; /*세로 정렬*/
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 블럭은 항상 가로 100% -->
+    <div class="bg1">
+        <div class="center">
+            오늘의 계획
+        </div>
+    </div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+</body>
+</html>

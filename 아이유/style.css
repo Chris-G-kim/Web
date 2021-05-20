@@ -1,0 +1,42 @@
+
+body{
+        background-color: #fffbdf;
+        font-family: 'Nanum Pen Script', cursive;
+        line-height: 1;
+        color:#3d84b8;
+        font-size: 1.5em;
+}
+h1 {
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 1.5em;
+}
+h3 {
+       font-family: 'Nanum Brush Script', cursive;
+       font-size: 1.5em;
+}
+hr {
+    border-style: none;
+    /* border-style: groove; */
+    border-top-style: double ;
+    border-width: 8px;
+    border-color: coral;
+    width: 15%;
+    margin: 30px 0;
+    margin: 30px auto;
+}
+.align {
+        text-align: center;
+}
+.indent{
+        text-indent: 10px;
+}
+a {
+        text-decoration: none;
+}
+
+.shadow {
+        color: #fff;
+        /* background: #3594C0; */
+        text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+      }
+

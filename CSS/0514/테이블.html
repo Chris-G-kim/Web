@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+    <style>
+        /* table, 
+        td, 
+        th {
+            border: 1px solid black;
+        } */
+
+        table {
+            border-collapse: collapse;
+            width: 150px;
+        }
+        th, 
+        td  {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        } 
+        #myTable tr:hover {
+            background-color: coral;
+            color: cornflowerblue;
+        }
+        /* odd:홀수, even:짝수*/
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: skyblue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <th>성</th> <th>이름</th>
+        </tr>
+        <tr>
+            <td>홍</td> <td>길동</td>
+        </tr>
+        <tr>
+            <td>김</td> <td>유신</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
