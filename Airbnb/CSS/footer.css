@@ -1,0 +1,15 @@
+
+/* footer 섹션 */
+
+/* 각종 링크 */
+#footer {
+    background-color: gainsboro;
+}
+
+#footer .grid1 {
+    line-height: 250%;
+    font-size: 11pt;
+    padding: 20px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

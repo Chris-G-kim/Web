@@ -13,8 +13,9 @@ body {
     font : Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
+/* 첫 페이지 시작 */
 #main-page {
-    background: url(img/airbnb_bg.jpg) center center no-repeat;
+    background: url(../img/airbnb_bg.jpg) center center no-repeat;
     background-size: cover;
     height: 80vh;
 }
@@ -30,19 +31,16 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .main-navi .logo {
     height: 80px;
     display: flex;
     align-items: center;
 }
-
 .main-navi .logo i{
     font-size: 35px;
     position: relative;
     top: 7px;
 }
-
 .main-navi .logo a{
     text-decoration: none;
     color: #222;
@@ -50,7 +48,6 @@ body {
     font-weight: 900;
     padding-bottom: 7px;
 }
-
 .main-navi .search .btn{
     height: 48px;
     width: 300px;
@@ -64,35 +61,48 @@ body {
     background-color: white;
     outline: none;
 }
-
 .main-navi .search .btn:hover {
     box-shadow: 0px 2px 8px rgba(0,0,0,0.15); /*rgba에서 a는 투명도*/
 }
-
 .main-navi .search .bicon {
     background-color: rgb(255, 56, 92);
     color: white;
     border-radius: 50%; /*원*/
     padding: 7px 9px;
 }
-
 .main-navi .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    align-items: center;
     width: 200px;
 }
+.main-navi .menu .btn3 {
+    height: 30px;
+    width: 70px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+}
 
-.box {
+.main-navi .menu .btn3:hover {
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+#main-page .box {
     width: 1600px;
     height: 364px;
-    padding: 7% 80px ;
+    padding: 7% 80px;
 }
-
-.box h1 {
-    font-size: 50px;
+#main-page .box h1 {
+    font-size: 60px;
 }
-
-.box button {
+#main-page .box button {
     color: white;
     font-weight: 900;
     font-size: 7;
@@ -109,7 +119,7 @@ body {
     border: 1px solid black;
 }
 
-
+/* 첫페이지 끝 */
 
 
 

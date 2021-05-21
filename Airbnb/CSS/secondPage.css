@@ -1,0 +1,39 @@
+section { /* 모든 섹션에 패딩 0, 80 적용*/
+    padding: 0 80px;
+    margin-top: 50px;
+}
+
+/* 둘러보기 섹션 */
+
+#around .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+#around img {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+}
+
+
+/* 살아보기 섹션 */
+
+#live .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+#live h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+#live img{
+    width: 100%;
+    border-radius: 10px;
+}
+#live div {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px 0;
+}
