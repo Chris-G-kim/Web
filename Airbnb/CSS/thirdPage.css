@@ -1,0 +1,12 @@
+
+
+section { /* 모든 섹션에 패딩 0, 80 적용*/
+    padding: 0 80px;
+    margin-top: 50px;
+}
+
+/* 체험 섹션 */
+
+#exp .expTitle {
+    font-size : 105pt;
+}

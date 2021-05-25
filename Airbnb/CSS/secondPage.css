@@ -1,3 +1,5 @@
+
+
 section { /* 모든 섹션에 패딩 0, 80 적용*/
     padding: 0 80px;
     margin-top: 50px;
@@ -5,15 +7,27 @@ section { /* 모든 섹션에 패딩 0, 80 적용*/
 
 /* 둘러보기 섹션 */
 
+#around h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
 #around .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 #around img {
-    width: 64px;
-    height: 64px;
+    width: 70px;
+    height: 70px;
     border-radius: 20px;
+}
+#around .inner {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap : 15px;
+    display: flex;
+    align-items: center;
 }
 
 

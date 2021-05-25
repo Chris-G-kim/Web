@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 함수 </title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        // 함수의 선언
+        function printTen() {
+            alert(10)
+        }
+
+        // 함수의 호출
+        printTen();
+
+        // ====================
+
+        function plusTen(x) {
+            return x + 10;
+        }
+        alert(plusTen(30));
+    
+        function calRemainLife(age) {
+            var x = (90 - age) * 365;
+            var y = (90 - age) * 52;
+            var z = (90 - age) * 12;
+            return (x + '일, ' + y + '주, ' + z + '달 남았습니다. ');
+        }
+
+        // 익명 함수 : 함수의 이름이 없음
+        var plusTenInput = function () {
+            var num = prompt('숫자를 입력해주세요', '0');
+            return Number(num) + 10;
+        }
+
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        // 예제 2)
+
+        function ask(q, yes, no) {
+            if (confirm(q)) yes();
+            else no();
+        }
+        function yes() {
+            alert("동의했습니다.")
+        }
+        function no() {
+            alert("취소했습니다.")
+        }
+
+        // 예제 3-1)
+        function add(n1, n2) {
+            return n1 + n2;
+        }
+        function multiply(n1, n2) {
+            return n1 * n2;
+        }
+
+        // 예제 3-2)
+        function calculrator(n1, n2, operator) {
+            return operator(n1, n2);
+        }
+
+        // 타이머 함수
+        function seconds() {
+            alert('3초');
+        }
+        setTimeout(seconds, 3000);
+
+        // setTimeout에 단회성 익명함수 활용하기
+        setTimeout(function () {
+            alert('3초');
+        }, 3000)
+
+    </script>
+
+</body>
+
+</html>
