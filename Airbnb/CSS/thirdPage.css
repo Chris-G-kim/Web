@@ -8,5 +8,30 @@ section { /* 모든 섹션에 패딩 0, 80 적용*/
 /* 체험 섹션 */
 
 #exp .expTitle {
-    font-size : 105pt;
+    font-size : 25pt;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+#exp .subTitle {
+    font-size : 21pt;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+#exp .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#exp .grid img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#exp .text1 {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px 0;
 }
