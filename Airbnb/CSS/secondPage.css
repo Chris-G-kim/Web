@@ -1,5 +1,14 @@
 
 
+/* 초기화 */
+* { /* *(아스트릭)은 모든 태그 선택자 */
+    margin: 0;
+    padding: 0;
+    /* 가로세로 길이 기준을 보더박스 기준으로 함. 
+    css에서는 일반적으로 border box를 기준으로 한다. */
+    box-sizing: border-box;
+}
+
 section { /* 모든 섹션에 패딩 0, 80 적용*/
     padding: 0 80px;
     margin-top: 50px;
