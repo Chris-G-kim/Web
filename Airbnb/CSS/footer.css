@@ -28,14 +28,21 @@ section { /* 모든 섹션에 패딩 0, 80 적용*/
 /* 각종 링크 끝 */
 
 /* 수평선 */
-#footer #horizon1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-#footer #line {
+#footer .tail {
+    position: sticky;
+    top: 0%;
+    height: 80px;
+    padding:  0 80px;
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+#footer .icon_box {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
 }
 
 /* 수평선 끝 */
